@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Form -->
+<form>
+    <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,48}" required/>
+        <i class="fa fa-check check-ok"></i>
+    </div>
+    <div>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" required/>
+        <i class="fa fa-check check-ok"></i>
+    </div>
+    <div>
+        <label for="correo">Email</label>
+        <input type="email" name="correo" id="correo" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" required/>
+        <i class="fa fa-check check-ok"></i>
+    </div>
+    <div>
+        <label for="dni">DNI</label>
+        <input type="text" name="dni" id="dni" pattern="^([a-z]+[0-9]{0,2}){5,12}$" required/>
+        <i class="fa fa-check check-ok"></i>
+    </div>
+    <div>
+        <label for="tel">TEL</label>
+        <input type="tel" name="tel" id="tel" pattern="[A-Za-z0-9!?-]{8,12}" required/>
+        <i class="fa fa-check check-ok"></i>
+    </div>
+    <div>
+        <label for="direccion">Dirección</label>
+        <input typeof="text" name="direccion" id="direccion" pattern="^([a-z]+[0-9]{0,2}){5,12}$" required/>
+        <i class="fa fa-check check-ok"></i>
+    </div>
+    <div>
+        <button type="submit">Enviar</button>
+    </div>
+</form>
